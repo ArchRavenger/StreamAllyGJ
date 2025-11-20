@@ -135,6 +135,10 @@ public class FirstPersonController : MonoBehaviour
     private Vector3 jointOriginalPos;
     private float timer = 0;
 
+    [Header("Flashlight")]
+    public GameObject flashlightObject;
+    public KeyCode flashlightKey = KeyCode.Mouse0;
+    private bool flashlightOn = false;
     #endregion
 
     private void Awake()
@@ -160,6 +164,8 @@ public class FirstPersonController : MonoBehaviour
             sprintRemaining = sprintDuration;
             sprintCooldownReset = sprintCooldown;
         }
+        if (flashlightObject != null)
+            flashlightObject.SetActive(false);
     }
 
     void Start()
@@ -215,8 +221,15 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
-        
-        
+        if (Input.GetKeyDown(flashlightKey))
+        {
+            flashlightOn = !flashlightOn;
+
+            if (flashlightObject != null)
+                flashlightObject.SetActive(flashlightOn);
+        }
+
+
         #region Camera
 
         // Control camera movement
@@ -377,6 +390,7 @@ public class FirstPersonController : MonoBehaviour
         {
             HeadBob();
         }
+       
     }
 
     void FixedUpdate()
