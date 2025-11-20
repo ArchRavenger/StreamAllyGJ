@@ -9,9 +9,9 @@ public class Enemynav : MonoBehaviour
 
     private GameObject _player;
     private NavMeshAgent _agent;
-    
-    private GameObject _actualPathPointTarget;
-    private GameObject[] _pathPoints;
+
+    [SerializeField] private GameObject _actualPathPointTarget;
+    [SerializeField] private GameObject[] _pathPoints;
 
     private GameObject _target;
 
