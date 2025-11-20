@@ -42,7 +42,7 @@ public class Enemynav : MonoBehaviour
         }
         else
         {
-            if (Vector3.Distance(transform.position, _actualPathPointTarget.transform.position) < 2)
+            if (Vector3.Distance(transform.position, _actualPathPointTarget.transform.position) < 40)
             {
                 _actualPathPointTarget = _pathPoints[Random.Range(0, _pathPoints.Length)];
             }
