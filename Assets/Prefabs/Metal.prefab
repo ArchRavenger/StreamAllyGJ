@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6749807791603989104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2580020923256180592, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_Name
+      value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 101.808784
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 301.28265
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72516745
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6885726
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442803266672488442, guid: abc00000000010897424535932358727, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 01cb38f4f3c0ac74b9a7c998a4aa5b2f, type: 2}
+    m_RemovedComponents:
+    - {fileID: 20500000, guid: abc00000000010897424535932358727, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 100008, guid: abc00000000010897424535932358727, type: 3}
+    - {fileID: 100002, guid: abc00000000010897424535932358727, type: 3}
+    - {fileID: 100006, guid: abc00000000010897424535932358727, type: 3}
+    - {fileID: 100004, guid: abc00000000010897424535932358727, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: abc00000000010897424535932358727, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2755125850063851805}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: abc00000000010897424535932358727, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3407497163527826015}
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000010897424535932358727, type: 3}
+--- !u!1 &6749807791604088016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: abc00000000010897424535932358727, type: 3}
+  m_PrefabInstance: {fileID: 6749807791603989104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2755125850063851805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749807791604088016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205a74a1f74dd364d88917a31cbca7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectAble
+  itemName: Metal
+--- !u!65 &3407497163527826015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749807791604088016}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.615969, y: 6.949192, z: 9.820801}
+  m_Center: {x: -38.83283, y: -2.0257244, z: -0.20144424}

@@ -26,10 +26,10 @@ Material:
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
-  - TransparentDepthPrepass
+  - RayTracingPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - RayTracingPrepass
+  - TransparentDepthPrepass
   m_LockedProperties: _SpecularOcclusionMode
   m_SavedProperties:
     serializedVersion: 3
@@ -152,7 +152,7 @@ Material:
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
-    - _AlbedoAffectEmissive: 0
+    - _AlbedoAffectEmissive: 1
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 0
     - _AlphaCutoffPostpass: 0.5
@@ -199,8 +199,8 @@ Material:
     - _DstBlend: 10
     - _DstBlend2: 10
     - _EmissiveColorMode: 1
-    - _EmissiveExposureWeight: 1
-    - _EmissiveIntensity: 1335.0782
+    - _EmissiveExposureWeight: 0.853
+    - _EmissiveIntensity: 1782.4341
     - _EmissiveIntensityUnit: 1
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
@@ -225,7 +225,7 @@ Material:
     - _HeightTessCenter: 0.5
     - _IncludeIndirectLighting: 1
     - _InvTilingScale: 1
-    - _Ior: 1.5
+    - _Ior: 1.176
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
@@ -291,12 +291,12 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.6628624, g: 1, b: 0, a: 0.38431373}
-    - _Color: {r: 0.66286236, g: 1, b: 0, a: 0.38431373}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.3254902}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.3254902}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 1335.0782, g: 1335.0782, b: 1335.0782, a: 1335.0782}
+    - _EmissiveColor: {r: 1782.4341, g: 1782.4341, b: 1782.4341, a: 1782.4341}
     - _EmissiveColorLDR: {r: 1, g: 1, b: 1, a: 1}
     - _FogVolumeSingleScatteringAlbedo: {r: 1, g: 1, b: 1, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
