@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 
 public class Enemynav : MonoBehaviour
 {
@@ -86,6 +85,10 @@ public class Enemynav : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
-        Gizmos.DrawLine(transform.position, _target.transform.position);
+
+        if (_target != null)
+        {
+            Gizmos.DrawLine(transform.position, _target.transform.position);
+        }
     }
 }

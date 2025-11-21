@@ -747,6 +747,9 @@ PrefabInstance:
       addedObject: {fileID: 719343704}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a7e8c63207068a54189a838dd0bbec27, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 719343703}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a7e8c63207068a54189a838dd0bbec27, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 719343707}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a7e8c63207068a54189a838dd0bbec27, type: 3}
       insertIndex: -1
@@ -950,6 +953,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &719343703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719343700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba997765900227c47b5c35e4bf7f1c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaySound
+  soundClip: {fileID: 8300000, guid: 437828ba1a2e2c54f83ee2f25a6c4ba4, type: 3}
+  audioSource: {fileID: 719343704}
 --- !u!82 &719343704
 AudioSource:
   m_ObjectHideFlags: 0
