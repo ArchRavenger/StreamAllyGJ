@@ -5,6 +5,7 @@ public class Enemynav : MonoBehaviour
 {
     public int detectionRadius = 200;
     public int offsetFromFloor = 5;
+    public float verticalSpeed = 0.01f;
 
     private GameObject _player;
     private NavMeshAgent _agent;
@@ -71,13 +72,14 @@ public class Enemynav : MonoBehaviour
         var heightDelta = 0f;
         if (_target.transform.position.y < transform.position.y)
         {
-            heightDelta = -0.1f;
+            heightDelta = -verticalSpeed;
         }
         else
         {
-            heightDelta = 0.1f;
+            heightDelta = verticalSpeed;
         }
 
+        if (Mathf.Abs(_target.transform.position.y - transform.position.y) < 0.5f) return;
         _agent.baseOffset = Mathf.Max(_agent.baseOffset + heightDelta, offsetFromFloor);
     }
 
